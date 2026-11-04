@@ -4,7 +4,7 @@ import evaluate
 from preprocess import get_data
 
 explore.run()
-X_tr, X_te, y_tr, y_te, cols = get_data()
-model = train.train(X_tr, y_tr, cols)
-evaluate.evaluate(model, X_tr, X_te, y_tr, y_te)
-print("\nDone. Plots and results are saved in the outputs/ folder.")  
+X_train, X_test, y_train, y_test, columns = get_data()
+model = train.train(X_train, y_train, columns)
+evaluate.evaluate(model, X_train, X_test, y_train, y_test)
+print("\nDone. Plots and results are saved in the outputs/ folder.")
